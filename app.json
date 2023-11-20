@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "erclens_location",
-    "slug": "erclens_location",
-    "version": "1.0.0",
+    "name": "erclens_delivery",
+    "slug": "erclens_delivery",
+    "version": "1.3.9",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,20 +11,33 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
+      "infoPlist": {
+        "UIBackgroundModes": ["location"]
+      },
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "ACCESS_BACKGROUND_LOCATION",
+                
+                    ],
+      "package": "com.g2.genious.erclens_delivery"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "63d81824-830e-4ce8-bbc2-115ecb60c321"
+      }
     }
   }
 }

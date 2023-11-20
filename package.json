@@ -1,6 +1,7 @@
 {
   "name": "erclens_location",
   "version": "1.0.0",
+  "proxy": "https://erceyecare.onehash.ai/api/resource",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -9,10 +10,26 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "1.18.2",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.17",
+    "@react-navigation/stack": "^6.3.20",
+    "axios": "^1.6.2",
+    "create-id": "^1.0.2",
     "expo": "~49.0.15",
+    "expo-background-fetch": "~11.3.0",
+    "expo-constants": "^14.4.2",
+    "expo-device": "~5.4.0",
+    "expo-location": "~16.1.0",
     "expo-status-bar": "~1.6.0",
+    "expo-task-manager": "~11.3.0",
+    "node-schedule": "^2.1.1",
     "react": "18.2.0",
-    "react-native": "0.72.6"
+    "react-native": "0.72.6",
+    "react-native-loading-spinner-overlay": "^3.0.1",
+    "react-native-paper": "^5.11.1",
+    "react-native-vector-icons": "^10.0.2",
+    "expo-keep-awake": "~12.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
