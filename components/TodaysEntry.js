@@ -10,6 +10,7 @@ const today = new Date().toISOString().split('T')[0];
 
 
 return (
+<>
 <View style={{ flex: 1, alignItems: 'center', marginTop: 2,marginBottom:10}}>
   <ScrollView style={{ height: 500, width: '100%' }} vertical showsVerticalScrollIndicator={true}>
     <DataTable>
@@ -35,7 +36,7 @@ return (
     </DataTable>
   </ScrollView>
 </View>
-
+</>
 
 	   )
 

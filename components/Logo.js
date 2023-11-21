@@ -69,16 +69,21 @@ const logout = async () => {
 }
 
 return(
-        <View style={styles.logoContainer}>
-          <Image source={require('../assets/erc.png')} style={styles.logoImage} />
-          <View>     
-           <Text style={{fontSize:10,color:'#2490ef'}}>Hi , {agentIdxc} </Text>
-           <Text style={{fontSize:7}}>Date: {today}</Text>
-           <Text style={{fontSize:7}}>Time: {afd}</Text>
-           <Text style={{fontSize:7,color:'red'}}>Version: {versionNumber}</Text>
-          </View>
-            {route && route.name !== 'Login' && !showlogout ? <Text style={{padding:5,color:'#2490ef', fontWeight:'800',fontSize: 16 }} onPress={()=>logout()}>Logout</Text> : ''}
+<View style={styles.logoContainer}>
+  <Image source={require('../assets/erc.png')} style={styles.logoImage} />
+     <View>
+       <Text style={{ fontSize: 10, color: '#2490ef' }}>Hi, {agentIdxc}</Text>
+       <Text style={{ fontSize: 7 }}>Date: {today}</Text>
+       <Text style={{ fontSize: 7 }}>Time: {afd}</Text>
+       <Text style={{ fontSize: 7, color: 'red' }}>Version: {versionNumber}</Text>
+      </View>
+        <View>
+             {route && route.name !== 'Login' && !showlogout ? (
+               <Text style={{ padding: 5, color: '#2490ef', fontWeight: '800', fontSize: 16 }} onPress={() => logout()}>Logout</Text>
+             ) : null}
         </View>
+</View>
+
 	  )
 }
 
